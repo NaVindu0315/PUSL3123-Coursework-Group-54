@@ -24,6 +24,11 @@ for x =1:4
     disp(["column",num2str(x)]);
     disp(["standard deviation  : " , num2str(meas_st_deviation) ]);
     
+    %maximum
+    meas_max = max(meas_data);
+    disp(["column",num2str(x)]);
+    disp(["Maximum  : " , num2str(meas_max) ]);
+
 
 
 end
