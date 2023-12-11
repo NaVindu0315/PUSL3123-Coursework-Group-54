@@ -14,4 +14,8 @@ disp(meas)
 % to get the featurs from 1-4 
 for x =1:4
     meas_data =  meas(:,x);
+    %mean display
+    meas_mean = mean(meas_data);
+    
+    disp(["mean() : " , num2str(meas_mean) ]);
 end
