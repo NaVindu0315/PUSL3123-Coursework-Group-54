@@ -34,10 +34,7 @@ for x =1:4
     disp(["Maximum  : " , num2str(meas_max) ]);
     %minimum 
     disp(["minimum  : " , num2str(meas_min) ]);
-
     %root mean square 
-   
-    disp(["column",num2str(x)]);
     disp(["root mean square   : " , num2str(meas_root_sq) ]);
 
 
