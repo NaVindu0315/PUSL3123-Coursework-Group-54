@@ -16,6 +16,11 @@ for x =1:4
     meas_data =  meas(:,x);
     %mean display
     meas_mean = mean(meas_data);
+    disp(["column",num2str(x)]);
+    disp(["mean : " , num2str(meas_mean) ]);
+
     
-    disp(["mean() : " , num2str(meas_mean) ]);
+    
+
+
 end
