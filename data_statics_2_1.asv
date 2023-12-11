@@ -4,6 +4,6 @@ load fisheriris
 
 % part B
 N = size(meas,1);
-disp(["No of Rows in meas : ",num2str(N)]);
+disp("N);
 
 
