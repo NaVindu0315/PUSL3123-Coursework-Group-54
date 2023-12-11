@@ -29,6 +29,12 @@ for x =1:4
     disp(["column",num2str(x)]);
     disp(["Maximum  : " , num2str(meas_max) ]);
 
+    %minimum 
+    meas_min = min(meas_data);
+    disp(["column",num2str(x)]);
+    disp(["minimum  : " , num2str(meas_min) ]);
+
+
 
 
 end
