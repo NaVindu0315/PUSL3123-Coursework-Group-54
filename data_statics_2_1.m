@@ -19,7 +19,10 @@ for x =1:4
     disp(["column",num2str(x)]);
     disp(["mean : " , num2str(meas_mean) ]);
 
-    
+    %standard deviation
+    meas_st_deviation = std(meas_data);
+    disp(["column",num2str(x)]);
+    disp(["standard deviation  : " , num2str(meas_st_deviation) ]);
     
 
 
