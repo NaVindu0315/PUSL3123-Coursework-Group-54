@@ -21,10 +21,11 @@ for x =1:4
     meas_max = max(meas_data);
     meas_min = min(meas_data);
 
+    %displaying 
 
-    %mean display
-    
+    %column 
     disp(["column",num2str(x)]);
+    %mean display
     disp(["mean : " , num2str(meas_mean) ]);
 
     %standard deviation

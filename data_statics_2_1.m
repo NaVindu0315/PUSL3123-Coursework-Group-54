@@ -25,18 +25,12 @@ for x =1:4
 
     %column 
     disp(["column",num2str(x)]);
-    %
-
-
-
     %mean display
-    
-    
     disp(["mean : " , num2str(meas_mean) ]);
 
     %standard deviation
     
-    disp(["column",num2str(x)]);
+
     disp(["standard deviation  : " , num2str(meas_st_deviation) ]);
     
     %maximum
