@@ -1,3 +1,6 @@
-%fisherirs data is loaded
+%fisherirs dataset is loaded
 
 load fisheriris
+
+% part B
+
