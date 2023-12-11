@@ -10,30 +10,41 @@ N2 = size(species,1);
 disp(["No of Rows in species : ",num2str(N2)]);
 
 % part c 
-disp(meas)
+%disp(meas)
 % to get the featurs from 1-4 
 for x =1:4
+    %assigning values
+
     meas_data =  meas(:,x);
-    %mean display
     meas_mean = mean(meas_data);
+    meas_st_deviation = std(meas_data);
+    meas_max = max(meas_data);
+    meas_min = min(meas_data);
+
+
+    %mean display
+    
     disp(["column",num2str(x)]);
     disp(["mean : " , num2str(meas_mean) ]);
 
     %standard deviation
-    meas_st_deviation = std(meas_data);
+    
     disp(["column",num2str(x)]);
     disp(["standard deviation  : " , num2str(meas_st_deviation) ]);
     
     %maximum
-    meas_max = max(meas_data);
     disp(["column",num2str(x)]);
     disp(["Maximum  : " , num2str(meas_max) ]);
 
     %minimum 
-    meas_min = min(meas_data);
+    
     disp(["column",num2str(x)]);
-    disp(["minimum  : " , num2str(meas_mi) ]);
+    disp(["minimum  : " , num2str(meas_min) ]);
 
+    %root mean square 
+    meas_root_sq = sqrt(mean(meas_data.^2));
+    disp(["column",num2str(x)]);
+    disp(["root mean square   : " , num2str(meas_root_sq) ]);
 
 
 
