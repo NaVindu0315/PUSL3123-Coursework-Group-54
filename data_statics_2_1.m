@@ -34,6 +34,10 @@ for x =1:4
     disp(["column",num2str(x)]);
     disp(["minimum  : " , num2str(meas_min) ]);
 
+    %root mean square 
+    meas_root_sq = sqrt(mean(meas_data.^2));
+    disp(["column",num2str(x)]);
+    disp(["root mean square   : " , num2str(meas_root_sq) ]);
 
 
 
