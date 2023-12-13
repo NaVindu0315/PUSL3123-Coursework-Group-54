@@ -91,4 +91,7 @@ nett = feedforwardnet(hidden_layer_size1);
 % Training the neural network
 nett = train(nett, training_data', new_training_targets);
 
+%testing the neural network
+predicted = nett(testing_data');
+
 
