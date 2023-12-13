@@ -7,3 +7,4 @@ load fisheriris;
 rows_count = size(meas,1);
 %to shuffle
 rng("shuffle");
+sfld_meas= meas(randperm(size(meas,1)),:);
