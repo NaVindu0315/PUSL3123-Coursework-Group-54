@@ -81,5 +81,8 @@ no_exps = 3;
 %part 5
 no_runs = 5;
 %to get the accuaracy
+accrcy = zeros(length(hidden_layers),no_exps,no_runs);
+
+for layer_indx = 1:
 
 
