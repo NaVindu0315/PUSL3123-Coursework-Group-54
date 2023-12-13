@@ -14,7 +14,7 @@ disp(["No of Rows in species : ",num2str(N2)]);
 % to get the featurs from 1-4 
 
 %creating the list for attritbutes
-atr = {"sepal length","sepal width",}
+atr = {"sepal length","sepal width","petal length","petal width"}
 
 for x =1:4
     %assigning values
@@ -29,7 +29,7 @@ for x =1:4
     %displaying 
 
     %column 
-    disp(["column",num2str(x)]);
+    disp(["A",num2str(x)]);
     %mean display
     disp(["mean : " , num2str(meas_mean) ]);
     %standard deviation
