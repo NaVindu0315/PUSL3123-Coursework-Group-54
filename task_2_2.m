@@ -24,8 +24,8 @@ num_labels = grp2idx(new_species);
 new_training_target = ind2vec(num_labels(1:training_count));
 new_testing_target = ind2vec(num_labels(training_count+1:end));
 
-%creating the feedforward neural network
-hidden_layer_size = 10;
-nett = feedforwardnet(hidden_layer_size);
-%trainging the neural network
-nett = train(nett,trainging_data,training_target);
+% %creating the feedforward neural network
+% hidden_layer_size = 10;
+% nett = feedforwardnet(hidden_layer_size);
+% %trainging the neural network
+% nett = train(nett,trainging_data,training_target);
