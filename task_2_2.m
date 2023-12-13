@@ -61,5 +61,11 @@ for layer_size = hidden_layers
     for exp = 1:no_exps
         %nn
         nett =feedforwardnet(layer_size);
+        %training 
+        nett = train(nett,training_data',new_training_targets);
+        %testing nn
+        predicted = nett(testing_data');
+        %displaying
+        view(nett);
 
 
