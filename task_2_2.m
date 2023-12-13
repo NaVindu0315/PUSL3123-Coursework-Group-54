@@ -103,5 +103,7 @@ for layer_indx = 1:length(hidden_layers)
 end
 
 %calculating averge performance accros runs
+average_accuracy = mean(accrcy,3);
+disp("average accuaracy =");
 
 
