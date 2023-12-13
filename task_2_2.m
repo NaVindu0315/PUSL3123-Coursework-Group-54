@@ -20,9 +20,37 @@ training_target = new_species(1:training_count);
 testing_target = new_species(training_count+1:end);
 
 %converting training and testing targets to numeric
-num_labels = grp2idx(new_species);
-new_training_target = ind2vec(num_labels(1:training_count));
-new_testing_target = ind2vec(num_labels(training_count+1:end));
+% num_labels = grp2idx(new_species);
+% new_training_target = ind2vec(num_labels(1:training_count));
+% new_testing_target = ind2vec(num_labels(training_count+1:end));
+%begin
+% Convert species labels to numerical values for neural network
+training_targets = zeros(3, length(training_data));
+testing_targets = zeros(3, length(testing_data));
+for i = 1:length(training_data)
+    switch species{i}
+        case 'setosa'
+            training_targets(1, i) = 1;
+        case 'versicolor'
+            training_targets(2, i) = 1;
+        case 'virginica'
+            training_targets(3, i) = 1;
+    end
+end
+for i = 1:length(testing_data)
+    switch species{train_count+i}
+        case 'setosa'
+            testing_targets(1, i) = 1;
+        case 'versicolor'
+            testing_targets(2, i) = 1;
+        case 'virginica'
+            testing_targets(3, i) = 1;
+    end
+end
+
+
+
+%end
 
 % %creating the feedforward neural network
 % hidden_layer_size = 10;
