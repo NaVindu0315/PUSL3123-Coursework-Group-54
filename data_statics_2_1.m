@@ -29,7 +29,7 @@ for x =1:4
     %displaying 
 
     %column 
-    disp(["A",num2str(x)]);
+    disp(["Attribute ",atr(x)]);
     %mean display
     disp(["mean : " , num2str(meas_mean) ]);
     %standard deviation
