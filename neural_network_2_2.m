@@ -8,7 +8,7 @@ label_data = grp2idx(species);
 
 %to shuffle
 rng(1); 
-num_samples = size(new_data, 1);
-i=rander
+count = size(new_data, 1);
+i=randperm(count);
 new_data = new_data(i,:);
 label_data = label_data(i);
