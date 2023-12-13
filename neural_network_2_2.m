@@ -2,5 +2,5 @@
 load fisheriris;
 
 %shuffeling the dataset
-sfld_meas = shuffle(meas);
-disp(sfld_meas);
+rng('shuffle');
+dataset = dataset(randperm(size(dataset, 1)), :);
