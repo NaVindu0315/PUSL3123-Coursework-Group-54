@@ -49,5 +49,7 @@ end
 %end
 hidden_layer_size1 =10;
 nett = feedforwardnet(hidden_layer_size1);
+%training the nn
+nett=train(nett,trainging_data,new_training_targets);
 
 
