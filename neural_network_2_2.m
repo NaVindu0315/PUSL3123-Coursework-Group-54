@@ -3,4 +3,4 @@ load fisheriris;
 
 %shuffeling the dataset
 rng('shuffle');
-dataset = dataset(randperm(size(dataset, 1)), :);
+shuffled_meas = meas(randperm(size(meas, 1)), :);
