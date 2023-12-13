@@ -2,4 +2,6 @@
 load fisheriris;
 
 %shuffeling and dividing  the dataset set to test and train
-[training_ds,train_trgt,test_ds,test_trgt] = split_data(meas,species,0.6);
+
+%to get the no of rows 
+rows_count = size(meas,1);
