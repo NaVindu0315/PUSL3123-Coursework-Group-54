@@ -8,3 +8,5 @@ new_species = species(indx);
 
 %trainging percantage
 trn_p = 0.6;
+%splitting dataset to test and train
+training_count =floor(trn_p*size(new_meas,1));
