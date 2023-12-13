@@ -25,3 +25,5 @@ testing_target = new_species(training_count+1:end);
 %creating the feedforward neural network
 hidden_layer_size = 10;
 nett = feedforwardnet(hidden_layer_size);
+%trainging the neural network
+nett = train(nett,trainging_data,training_target);
