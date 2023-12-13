@@ -25,9 +25,9 @@ testing_target = new_species(training_count+1:end);
 % new_testing_target = ind2vec(num_labels(training_count+1:end));
 %begin
 % Convert species labels to numerical values for neural network
-training_targets = zeros(3, length(training_data));
-testing_targets = zeros(3, length(testing_data));
-for i = 1:length(training_data)
+new_training_targets = zeros(3, length(trainging_data));
+new_testing_targets = zeros(3, length(testing_data));
+for i = 1:length(trainging_data)
     switch species{i}
         case 'setosa'
             training_targets(1, i) = 1;
