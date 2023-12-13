@@ -55,4 +55,6 @@ view(nett);
 % prt 3
 %defining different hidden layer sizes 
 hidden_layers = [10,15,20];
+%defining no of exprmnt times
+no_exps = 3;
 
