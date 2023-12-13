@@ -51,7 +51,7 @@ end
 % %testing the neural network
 % predicted = nett(testing_data');
 %end of the 2 part 
-view(nett);
+
 % prt 3
 %defining different hidden layer sizes 
 hidden_layers = [10,15,20];
@@ -67,5 +67,8 @@ for layer_size = hidden_layers
         predicted = nett(testing_data');
         %displaying
         view(nett);
+        
+    end
+end
 
 
