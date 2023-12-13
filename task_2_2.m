@@ -41,6 +41,7 @@ for i = 1:length(testing_target)
 end
 
 %this is the code for 2 part
+%*******************************************%
 % Creating the neural network
 % hidden_layer_size1 = 10;
 % nett = feedforwardnet(hidden_layer_size1);
@@ -50,6 +51,7 @@ end
 % 
 % %testing the neural network
 % predicted = nett(testing_data');
+%*********************************************
 %end of the 2 part 
 
 % prt 3
@@ -57,18 +59,27 @@ end
 hidden_layers = [10,15,20];
 %defining no of exprmnt times
 no_exps = 3;
-for layer_size = hidden_layers
-    for exp = 1:no_exps
-        %nn
-        nett =feedforwardnet(layer_size);
-        %training 
-        nett = train(nett,training_data',new_training_targets);
-        %testing nn
-        predicted = nett(testing_data');
-        %displaying
-        view(nett);
-        
-    end
-end
+%code for the part 3
+
+%***************************************%
+% for layer_size = hidden_layers
+%     for exp = 1:no_exps
+%         %nn
+%         nett =feedforwardnet(layer_size);
+%         %training 
+%         nett = train(nett,training_data',new_training_targets);
+%         %testing nn
+%         predicted = nett(testing_data');
+%         %displaying
+%         view(nett);
+% 
+%     end
+% end
+%****************************************
+%end of the part 3
+
+%part 5
+no_runs = 5;
+%to get the accuaracy
 
 
