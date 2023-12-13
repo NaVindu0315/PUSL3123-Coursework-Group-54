@@ -40,21 +40,26 @@ for i = 1:length(testing_target)
     new_testing_targets(species_index, i) = 1;
 end
 
-
+%this is the code for 2 part
 % Creating the neural network
-hidden_layer_size1 = 10;
-nett = feedforwardnet(hidden_layer_size1);
-
-% Training the neural network
-nett = train(nett, training_data', new_training_targets);
-
-%testing the neural network
-predicted = nett(testing_data');
-
+% hidden_layer_size1 = 10;
+% nett = feedforwardnet(hidden_layer_size1);
+% 
+% % Training the neural network
+% nett = train(nett, training_data', new_training_targets);
+% 
+% %testing the neural network
+% predicted = nett(testing_data');
+%end of the 2 part 
 view(nett);
 % prt 3
 %defining different hidden layer sizes 
 hidden_layers = [10,15,20];
 %defining no of exprmnt times
 no_exps = 3;
+for layer_size = hidden_layers
+    for exp = 1:no_exps
+        %nn
+        nett =feedforwardnet(layer_size);
+
 
