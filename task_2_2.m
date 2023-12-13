@@ -30,21 +30,21 @@ new_testing_targets = zeros(3, length(testing_data));
 for i = 1:length(trainging_data)
     switch species{i}
         case 'setosa'
-            training_targets(1, i) = 1;
+            new_training_targets(1, i) = 1;
         case 'versicolor'
-            training_targets(2, i) = 1;
+            new_training_targets(2, i) = 1;
         case 'virginica'
-            training_targets(3, i) = 1;
+            new_training_targets(3, i) = 1;
     end
 end
 for i = 1:length(testing_data)
     switch species{train_count+i}
         case 'setosa'
-            testing_targets(1, i) = 1;
+            new_testing_targets(1, i) = 1;
         case 'versicolor'
-            testing_targets(2, i) = 1;
+            new_testing_targets(2, i) = 1;
         case 'virginica'
-            testing_targets(3, i) = 1;
+            new_testing_targets(3, i) = 1;
     end
 end
 
