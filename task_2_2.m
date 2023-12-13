@@ -48,5 +48,6 @@ end
 
 %end
 hidden_layer_size1 =10;
+nett = feedforwardnet(hidden_layer_size1);
 
 
