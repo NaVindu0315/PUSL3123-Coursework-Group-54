@@ -19,11 +19,7 @@ testing_data = new_meas(training_count+1:end,:);
 training_target = new_species(1:training_count);
 testing_target = new_species(training_count+1:end);
 
-%converting training and testing targets to numeric
-% num_labels = grp2idx(new_species);
-% new_training_target = ind2vec(num_labels(1:training_count));
-% new_testing_target = ind2vec(num_labels(training_count+1:end));
-%begin
+
 % Convert species labels to numerical values for neural network
 new_training_targets = zeros(3, length(trainging_data));
 new_testing_targets = zeros(3, length(testing_data));
@@ -51,9 +47,6 @@ end
 
 
 %end
+hidden_layer_size1 =10;
 
-% %creating the feedforward neural network
-% hidden_layer_size = 10;
-% nett = feedforwardnet(hidden_layer_size);
-% %trainging the neural network
-% nett = train(nett,trainging_data,training_target);
+
