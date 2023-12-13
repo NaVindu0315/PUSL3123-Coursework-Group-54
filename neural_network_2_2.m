@@ -12,3 +12,6 @@ count = size(new_data, 1);
 i=randperm(count);
 new_data = new_data(i,:);
 label_data = label_data(i);
+
+%dividing data for training and testing
+trn_prnctg = 0.6;
