@@ -52,5 +52,7 @@ nett = train(nett, training_data', new_training_targets);
 predicted = nett(testing_data');
 
 view(nett);
-%
+% prt 3
+%defining different hidden layer sizes 
+hidden_layers = [10,15,20];
 
