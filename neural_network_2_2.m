@@ -5,3 +5,5 @@ load fisheriris;
 
 %to get the no of rows 
 rows_count = size(meas,1);
+%to shuffle
+rng("shuffle");
