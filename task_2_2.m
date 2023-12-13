@@ -21,6 +21,9 @@ testing_target = new_species(training_count+1:end);
 
 
 % Convert species labels to numerical values for neural network
+species_label = unique(new_species);
+num_species = length(species_label);
+
 new_training_targets = zeros(3, length(trainging_data));
 new_testing_targets = zeros(3, length(testing_data));
 for i = 1:length(trainging_data)
