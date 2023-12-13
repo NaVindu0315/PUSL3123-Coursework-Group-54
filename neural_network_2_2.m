@@ -22,3 +22,9 @@ testing_data = new_data(trn_size+1:end,:);
 %testing and training target 
 training_target = label_data(1:trn_size);
 testing_target = label_data(trn_size+1:end);
+
+% %displaying
+% disp(testing_target);
+% disp(training_target);
+% disp(training_data);
+% disp(testing_data);
