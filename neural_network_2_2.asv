@@ -2,4 +2,9 @@
 load fisheriris;
 
 %shuffeling and dividing  the dataset set to test and train
-[tr]
+%renaming
+new_data = meas;
+label_data = grp2idx(species);
+
+%to shuffle
+rng(1); 
