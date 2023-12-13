@@ -17,3 +17,4 @@ testing_data = new_meas(training_count+1:end,:);
 
 %target
 training_target = new_species(1:training_count);
+testing_target = new_species(training_count+1:end);
