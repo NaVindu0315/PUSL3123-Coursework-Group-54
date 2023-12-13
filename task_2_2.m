@@ -21,30 +21,16 @@ testing_target = new_species(training_count+1:end);
 
 
 % Convert species labels to numerical values for neural network
-species_label = unique(new_species);
-num_species = length(species_label);
+%species_label = unique(new_species);
+num_species = length(new_species);
 
-new_training_targets = zeros(3, length(trainging_data));
+new_training_targets = zeros(num_species, length(training_target));
+
 new_testing_targets = zeros(3, length(testing_data));
-for i = 1:length(trainging_data)
-    switch species{i}
-        case 'setosa'
-            new_training_targets(1, i) = 1;
-        case 'versicolor'
-            new_training_targets(2, i) = 1;
-        case 'virginica'
-            new_training_targets(3, i) = 1;
-    end
-end
-for i = 1:length(testing_data)
-    switch species{training_count+i}
-        case 'setosa'
-            new_testing_targets(1, i) = 1;
-        case 'versicolor'
-            new_testing_targets(2, i) = 1;
-        case 'virginica'
-            new_testing_targets(3, i) = 1;
-    end
+
+for i = 1:length(training_target)
+    species_index = find(strcmp(new_species, training_target{i}));
+    new_training_targets(species_index, i) = 1;
 end
 
 
