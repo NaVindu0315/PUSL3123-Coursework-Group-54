@@ -38,7 +38,7 @@ for i = 1:length(trainging_data)
     end
 end
 for i = 1:length(testing_data)
-    switch species{train_count+i}
+    switch species{training_count+i}
         case 'setosa'
             new_testing_targets(1, i) = 1;
         case 'versicolor'
