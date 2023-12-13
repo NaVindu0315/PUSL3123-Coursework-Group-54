@@ -96,8 +96,15 @@ for layer_indx = 1:length(hidden_layers)
             %testing the nn using testing data
             predicted = nett(testing_data');
             %getting the percantage of correct classification
-            correct_prdctns = sum(strcmp(species_labels(argmax(predicted)),testing_target/length(testing_target)));
-            accrcy(layer_indx,exp,run) = correct_prdctns;
+            % correct_prdctns = sum(strcmp(species_labels(argmax(predicted)),testing_target/length(testing_target)));
+            % accrcy(layer_indx,exp,run) = correct_prdctns;
+
+            [~, predicted_idx] = max(predicted);
+            predicted_labels = species_labels(predicted_idx);
+            
+            % Calculating accuracy by comparing predicted labels to actual testing labels
+            correct_predictions = sum(strcmp(predicted_labels, testing_target)) / length(testing_target);
+            accrcy(layer_indx, exp, run) = correct_predictions;
         end
     end
 end
@@ -105,5 +112,5 @@ end
 %calculating averge performance accros runs
 average_accuracy = mean(accrcy,3);
 disp("average accuaracy =");
-
+disp(average_accuracy);
 
