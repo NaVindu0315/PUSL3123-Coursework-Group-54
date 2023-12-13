@@ -18,3 +18,6 @@ trn_prnctg = 0.6;
 trn_size =floor(trn_prnctg*size(new_data,1));
 training_data = new_data(1:trn_size);
 testing_data = new_data(trn_size+1:end,:);
+
+%testing and training target 
+training_target = label_data(1:trn_size);
