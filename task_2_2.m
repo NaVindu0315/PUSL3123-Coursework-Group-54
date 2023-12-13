@@ -12,3 +12,5 @@ trn_p = 0.6;
 training_count =floor(trn_p*size(new_meas,1));
 
 trainging_data = new_meas(1:training_count,:);
+testing_data = new_meas(training_count+1:end,:);
+
