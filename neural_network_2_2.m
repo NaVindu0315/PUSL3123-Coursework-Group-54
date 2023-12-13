@@ -15,3 +15,4 @@ label_data = label_data(i);
 
 %dividing data for training and testing
 trn_prnctg = 0.6;
+trn_size =floor(trn_prnctg*size(new_data,1));
