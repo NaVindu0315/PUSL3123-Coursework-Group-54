@@ -12,6 +12,10 @@ disp(["No of Rows in species : ",num2str(N2)]);
 % part c 
 %disp(meas)
 % to get the featurs from 1-4 
+
+%creating the list for attritbutes
+atr = {"sepal length","sepal width",}
+
 for x =1:4
     %assigning values
 
