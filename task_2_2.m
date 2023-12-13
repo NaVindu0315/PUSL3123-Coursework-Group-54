@@ -42,10 +42,10 @@
 % nett=train(nett,trainging_data,new_training_targets);
 
 %%%%%%%%%%%%%%%%%%% %%%%5
-% Load dataset
+% Loading dataset
 load fisheriris;
 
-% Shuffle the dataset
+% Shuffling the dataset
 rng("default");
 indx = randperm(size(meas,1));
 new_meas = meas(indx,:);
@@ -54,7 +54,7 @@ new_species = species(indx);
 % Training percentage
 trn_p = 0.6;
 
-% Split dataset into test and train
+% Spliting dataset into test and train
 training_count = floor(trn_p * size(new_meas,1));
 
 % Data
@@ -75,6 +75,14 @@ for i = 1:length(training_target)
     species_index = find(strcmp(species_labels, training_target{i}));
     new_training_targets(species_index, i) = 1;
 end
+%for testing target
+
+new_testing_targets =  zeros(num_species,length(testing_target));
+for i = 1:length(testing_target)
+    species_index = find(strcmp(species_labels, testing_target{i}));
+    new_testing_targets(species_index, i) = 1;
+end
+
 
 % Creating the neural network
 hidden_layer_size1 = 10;
