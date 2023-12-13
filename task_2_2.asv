@@ -80,6 +80,23 @@ no_exps = 3;
 
 %part 5
 no_runs = 5;
+%to get the accuaracy
+accrcy = zeros(length(hidden_layers),no_exps,no_runs);
+
+for layer_indx = 1:length(hidden_layers)
+    layer_size = hidden_layers(layer_indx);
+
+    for exp = 1:no_exps
+        for run = 1:no_runs
+            %creating the nn
+            nett = feedforwardnet(layer_size);
+            %traing the nn
+            nett = train(nett,training_data',new_training_targets);
+
+            %testing the nn using testing data
+            predicted = nett(testing_data');
+            %getting the percantage of correct classification
+            correct_prdctns = sum()
 
 
 
