@@ -97,6 +97,11 @@ for layer_indx = 1:length(hidden_layers)
             predicted = nett(testing_data');
             %getting the percantage of correct classification
             correct_prdctns = sum(strcmp(species_labels(argmax(predicted)),testing_target/length(testing_target)));
+            accrcy(layer_indx,exp,run) = correct_prdctns;
+        end
+    end
+end
 
+%calculating averge performance accros runs
 
 
