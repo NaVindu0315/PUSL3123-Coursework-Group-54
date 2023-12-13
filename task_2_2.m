@@ -86,6 +86,9 @@ accrcy = zeros(length(hidden_layers),no_exps,no_runs);
 for layer_indx = 1:length(hidden_layers)
     layer_size = hidden_layers(layer_indx);
 
-    for exp
+    for exp = 1:no_exps
+        for run = 1:no_runs
+            %creating the nn
+            nett =
 
 
