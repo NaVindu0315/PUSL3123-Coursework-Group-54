@@ -89,6 +89,13 @@ for layer_indx = 1:length(hidden_layers)
     for exp = 1:no_exps
         for run = 1:no_runs
             %creating the nn
-            nett =
+            nett = feedforwardnet(layer_size);
+            %traing the nn
+            nett = train(nett,training_data',new_training_targets);
+
+            %testing the nn using testing data
+            predicted = nett(testing_data');
+            %perfomance
+            
 
 
