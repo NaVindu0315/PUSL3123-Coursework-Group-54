@@ -2,6 +2,9 @@
 load fisheriris;
 
 %shuffeling and dividing  the dataset set to test and train
+%renaming
+new_data = meas;
+label_data = grp2idx(species);
 
 %to get the no of rows 
 rows_count = size(meas,1);
