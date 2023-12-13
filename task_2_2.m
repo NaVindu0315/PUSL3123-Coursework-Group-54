@@ -10,3 +10,5 @@ new_species = species(indx);
 trn_p = 0.6;
 %splitting dataset to test and train
 training_count =floor(trn_p*size(new_meas,1));
+
+trainging_data = new_meas(1:training_count,:);
