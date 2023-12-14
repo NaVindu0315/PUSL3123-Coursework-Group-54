@@ -85,8 +85,8 @@ for i =1:length(k_values)
   hold on;
   plot(centroids(:, 1), centroids(:, 2), 'kx', 'MarkerSize', 15, 'LineWidth', 3);xlabel('Feature 1');
   ylabel('Feature 2');
-    legend('Cluster 1', 'Cluster 2', 'Cluster 3', 'Centroids');
-    hold off;
+  legend('Cluster 1', 'Cluster 2', 'Cluster 3', 'Centroids');
+  hold off;
         
    
 end
