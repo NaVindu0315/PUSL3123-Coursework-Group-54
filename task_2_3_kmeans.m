@@ -41,5 +41,7 @@ for i =1:length(k_values)
     end
 
 end
-%to find the k 
-[optmial_k,indx_optimal]= in(evl_mtrcs);
+
+[optimal_value, indx_optimal] = min(evl_mtrcs);
+optimal_k = k_values(indx_optimal);
+fprintf('Optimal number of clusters: K = %d\n', optimal_k);
