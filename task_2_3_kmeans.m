@@ -69,4 +69,4 @@ for i =1:length(k_values)
     if size(new_data,2)<=3
         figure;
         silhouette(new_data,indx);
-        
+        title (["silhouette plot for k :",num2str(k2)]);
