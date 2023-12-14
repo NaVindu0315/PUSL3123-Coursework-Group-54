@@ -22,15 +22,15 @@ k_values = [3,4,5];
 %     %visualizing 
 %     %************************
 % 
-%     % figure;
-%     % gscatter(new_data(:,1),new_data(:,2),indx);
-%     % hold on;
-%     % %ploting centroids
-%     % scatter(c(:,1),c(:,2),100,'k','filled');
-%     % title("cluster results");
-%     % legend('cluser1','cluster2','cluster3');
-%     % hold off;
-%     %***************************
+    % % figure;
+    % % gscatter(new_data(:,1),new_data(:,2),indx);
+    % % hold on;
+    % % %ploting centroids
+    % % scatter(c(:,1),c(:,2),100,'k','filled');
+    % % title("cluster results");
+    % % legend('cluser1','cluster2','cluster3');
+    % % hold off;
+    % % ***************************
 %     if size(new_data,2)<= 3
 %         figure;
 % 
@@ -66,7 +66,15 @@ for i =1:length(k_values)
     %calculating 
     mean_sil_score(i) = mean(silht_values);
     %ploting silht values for each cluster 
-    if size(new_data,2)<=3
+    if size(new_data,2)<=1
+        %set(0, 'DefaultFigureVisible', 'on');
         figure;
+        
         silhouette(new_data,indx);
         title (["silhouette plot for k :",num2str(k2)]);
+        xlabel('Silhouette value');
+        ylabel('Cluster');
+        silhouette.visualize();
+        print(silhouette(new_data,indx));
+    end
+end
