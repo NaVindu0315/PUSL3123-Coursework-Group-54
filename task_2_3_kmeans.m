@@ -59,4 +59,6 @@ mean_sil_score = zeros(length(k_values),1);
 for i =1:length(k_values)
     %k means clustring for every k value
     k2 = k_values(i);
-    [indx]
+    [indx,centroids] = kmeans(new_data,k2);
+
+    %calculating sihoutte values
