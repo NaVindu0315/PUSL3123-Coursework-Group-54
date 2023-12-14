@@ -81,7 +81,8 @@ for i =1:length(k_values)
   %q4 begin
   %ploting clustrs
   figure;
-  gscatter(new_data(:,1),)
+  gscatter(new_data(:,1),new_data(:,2),indx);
+  hold on;
         
    
 end
