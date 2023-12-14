@@ -15,4 +15,9 @@ for i =1:length(k_values)
     k2 = k_values(i);
     [indx,c] = kmeans(new_data,k2);
     %evaluating the clutering perfomance
+    evl_mtrcs(i) = sum(sum(new_data-c(indx,:)));
+    %visualizing 
+    figure;
     
+
+end
