@@ -1,8 +1,6 @@
 %loading kmeans
 load kmeansdata;
 
-%assing data to a variable 
-new_data = X;
 %defining k values
 
 k_values = [3,4,5];
