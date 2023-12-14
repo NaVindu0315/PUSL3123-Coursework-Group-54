@@ -1,0 +1,2 @@
+%loading kmeans
+load kmeansdata;
