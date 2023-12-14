@@ -55,3 +55,8 @@ k_values = [3,4,5];
 
 %initializing variables for mean silhouette score
 mean_sil_score = zeros(length(k_values),1);
+
+for i =1:length(k_values)
+    %k means clustring for every k value
+    k2 = k_values(i);
+    [indx]
