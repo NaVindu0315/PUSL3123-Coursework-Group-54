@@ -28,6 +28,8 @@ for i =1:length(k_values)
     % legend('cluser1','cluster2','cluster3');
     % hold off;
     %***************************
-    
+    if size(new_data,2)<= 3
+        figure;
+        scatter3(new_data(:,1),new_data(:,2),new_data(:,3),[],indx,'filled');
 
 end
