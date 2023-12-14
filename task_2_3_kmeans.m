@@ -95,7 +95,12 @@ for i =1:length(k_values)
    
 end
 %q5
+%to get the best no of clusters
 [bst_Scre,bst_indx] =max(mean_sil_score);
 bst_k = k_values(bst_indx);
+%to get the output
+fprintf("best no of clusters k =%d ",bst_k);
 
+disp('Mean Silhouette Scores for each K:');
+disp(mean_sil_score);
 
