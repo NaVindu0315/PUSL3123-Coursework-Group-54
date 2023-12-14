@@ -53,4 +53,5 @@ k_values = [3,4,5];
 
 %part 3
 
-%initializing variables to 
+%initializing variables for mean silhouette score
+mean_sil_score = zeros(length(k_values),1);
