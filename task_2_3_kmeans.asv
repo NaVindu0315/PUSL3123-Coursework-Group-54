@@ -54,4 +54,14 @@ k_values = [3,4,5];
 %part 3
 
 %initializing variables for mean silhouette score
-mean_sil_score = zeros()
+mean_sil_score = zeros(length(k_values),1);
+
+for i =1:length(k_values)
+    %k means clustring for every k value
+    k2 = k_values(i);
+    [indx,centroids] = kmeans(new_data,k2);
+
+    %calculating sihoutte values
+    silht_values = silhouette(new_data,indx);
+    %calculating 
+    mean_sil_score(i)

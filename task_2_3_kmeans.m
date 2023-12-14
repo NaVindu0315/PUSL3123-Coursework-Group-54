@@ -63,3 +63,5 @@ for i =1:length(k_values)
 
     %calculating sihoutte values
     silht_values = silhouette(new_data,indx);
+    %calculating 
+    mean_sil_score(i) = mean(silht_values);
