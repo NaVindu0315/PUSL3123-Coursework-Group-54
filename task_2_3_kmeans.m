@@ -17,13 +17,17 @@ for i =1:length(k_values)
     %evaluating the clutering perfomance
     evl_mtrcs(i) = sum(sum(new_data-c(indx,:)));
     %visualizing 
-    figure;
-    gscatter(new_data(:,1),new_data(:,2),indx);
-    hold on;
-    %ploting centroids
-    scatter(c(:,1),c(:,2),100,'k','filled');
-    title("cluster results");
-    legend('cluser1','cluster2','cluster3');
-    hold off;
+    %************************
+    
+    % figure;
+    % gscatter(new_data(:,1),new_data(:,2),indx);
+    % hold on;
+    % %ploting centroids
+    % scatter(c(:,1),c(:,2),100,'k','filled');
+    % title("cluster results");
+    % legend('cluser1','cluster2','cluster3');
+    % hold off;
+    %***************************
+    
 
 end
