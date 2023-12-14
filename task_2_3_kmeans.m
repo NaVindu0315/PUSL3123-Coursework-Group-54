@@ -66,8 +66,7 @@ for i =1:length(k_values)
     %calculating 
     mean_sil_score(i) = mean(silht_values);
     %ploting silht values for each cluster 
-   % if size(new_data,2)<=1
-        %set(0, 'DefaultFigureVisible', 'on');
+  
         figure;
         
         silhouette(new_data,indx);
@@ -76,5 +75,5 @@ for i =1:length(k_values)
         xlabel('Silhouette value');
         ylabel('Cluster');
         
-    %end
+   
 end
