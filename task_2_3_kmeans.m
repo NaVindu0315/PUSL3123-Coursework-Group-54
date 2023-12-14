@@ -31,5 +31,11 @@ for i =1:length(k_values)
     if size(new_data,2)<= 3
         figure;
         scatter3(new_data(:,1),new_data(:,2),new_data(:,3),[],indx,'filled');
+        title(["k means clustering with k = ",num2str(k2)]);
+         xlabel('Feature 1');
+        ylabel('Feature 2');
+        zlabel('Feature 3');
+
+    end
 
 end
