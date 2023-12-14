@@ -91,6 +91,12 @@ for i =1:length(k_values)
   gscatter(new_data(:, 1), new_data(:, 2), indx);
   hold on;
   scatter(centroids(:, 1), centroids(:, 2), 50, 'k', 'filled');
+  title(['k-means clustering with k = ', num2str(k2)]);
+  xlabel('Feature 1');
+  ylabel('Feature 2');
+  hold off;
+
+
 
    
 end
