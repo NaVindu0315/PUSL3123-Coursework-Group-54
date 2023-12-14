@@ -23,5 +23,7 @@ for i =1:length(k_values)
     %ploting centroids
     scatter(c(:,1),c(:,2),100,'k','filled');
     title("cluster results");
+    legend('cluser1','cluster2','cluster3');
+    hold off;
 
 end
