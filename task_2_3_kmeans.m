@@ -62,3 +62,4 @@ for i =1:length(k_values)
     [indx,centroids] = kmeans(new_data,k2);
 
     %calculating sihoutte values
+    silht_values = silhouette(new_data,indx);
