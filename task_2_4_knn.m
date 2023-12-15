@@ -44,14 +44,14 @@ end
 k_values = [5,7];
 for k = k_values
     %training the knn with k value
-    knn_classifer = fitcknn(training_data,new_training_targets,'NumNeighbors',k);
+    knn_classifer = fitcknn(training_data,training_target,'NumNeighbors',k);
 
     prdctd_labels = predict(knn_classifer,testing_data);
     %evaluating accuaracy
-    accrcy = sum(strcmp(prdctd_labels,new_testing_targets))/numel(new_testing_targets);
+    accrcy = sum(strcmp(prdctd_labels,testing_target))/numel(testing_target);
     %displaying the accuarcy for k value
     fprintf("accuracy for k = %d : %.2f%%\n ",k,accrcy*100);
-
+end
     
 
 
