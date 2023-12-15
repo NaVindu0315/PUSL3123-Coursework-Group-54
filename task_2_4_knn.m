@@ -25,3 +25,8 @@ species_labels = unique(new_species);
 num_species = length(species_labels);
 
 new_training_targets = zeros(num_species, length(training_target));
+
+for i = 1:length(training_target)
+    species_index = find(strcmp(species_labels, training_target{i}));
+    new_training_targets(species_index, i) = 1;
+end
