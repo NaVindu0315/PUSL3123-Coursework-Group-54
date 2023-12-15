@@ -42,7 +42,11 @@ load fisheriris;
 
 %shuffleing the dataset 
 rng("default");
-shfld_indc = randperm
+shfld_indc = randperm(size(meas,1));
+%split prcntg
+trn_p =0.6;
+tst_p =0.4;
+
 %q3
 %defining k values for evaluating
 k_values = [5,7];
