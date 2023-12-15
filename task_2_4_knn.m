@@ -38,7 +38,13 @@ for k = k_values
 
     %q4
     %confussion matrix
-    
+    cnfs_mat = confusionmat(testing_target,prdctd_labels);
+    disp("Confusion matrix for k = " + k + ":");
+    disp(cnfs_mat);
+
+    %prcntge of correct clssifications
+    crct_clssifctns = sum(diag(cnfs_mat));
+    totl_s
 end
     
 
