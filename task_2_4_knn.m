@@ -44,5 +44,10 @@ end
 k_values = [5,7];
 for k = k_values
     %training the knn with k value
-    knn_classifer = fitcknn(training_data,new_training_targets)
+    knn_classifer = fitcknn(training_data,new_training_targets,'NumNeighbors',k);
+
+    prdctd_labels = predict(knn_classifer,testing_data);
+    
+
+
 
