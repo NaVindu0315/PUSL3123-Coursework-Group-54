@@ -53,7 +53,8 @@ no_test_records = total_records - no_train_records;
 
 %spltting dta
 train_data = meas(shfld_indc(1:no_train_records),:);
-test
+test_data =meas(shfld_indc(no_train_records+1:end),:);
+
 
 
 %q3
