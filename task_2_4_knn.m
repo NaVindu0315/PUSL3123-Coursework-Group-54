@@ -35,6 +35,10 @@ for k = k_values
     accrcy = sum(strcmp(prdctd_labels,testing_target))/numel(testing_target);
     %displaying the accuarcy for k value
     fprintf("accuracy for k = %d : %.2f%%\n ",k,accrcy*100);
+
+    %q4
+    %confussion matrix
+    
 end
     
 
