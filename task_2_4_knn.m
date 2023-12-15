@@ -14,3 +14,7 @@ training_count = floor(trn_p * size(new_meas,1));
 % Data
 training_data = new_meas(1:training_count,:);
 testing_data = new_meas(training_count+1:end,:);
+
+% Target
+training_target = new_species(1:training_count);
+testing_target = new_species(training_count+1:end);
