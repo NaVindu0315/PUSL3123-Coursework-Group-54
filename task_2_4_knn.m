@@ -48,7 +48,11 @@ for k = k_values
 
     prdctd_labels = predict(knn_classifer,testing_data);
     %evaluating accuaracy
-    accrcy = sum(strcmp(prdctd_labels,new_testing_targets))
+    accrcy = sum(strcmp(prdctd_labels,new_testing_targets))/numel(new_testing_targets);
+    %displaying the accuarcy for k value
+    fprintf("accuracy for k = %d : %.2f%%\n ",k,accrcy*100);
+
+    
 
 
 
