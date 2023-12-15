@@ -56,6 +56,7 @@ train_data = meas(shfld_indc(1:no_train_records),:);
 test_data =meas(shfld_indc(no_train_records+1:end),:);
 
 training_target = species(shfld_indc(1:no_train_records));
+testing_target = species(shfld_indc(no_train_records+1:end));
 
 
 
