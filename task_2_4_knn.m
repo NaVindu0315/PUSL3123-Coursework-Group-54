@@ -18,3 +18,8 @@ testing_data = new_meas(training_count+1:end,:);
 % Target
 training_target = new_species(1:training_count);
 testing_target = new_species(training_count+1:end);
+
+
+% Converting species labels to numerical values for the neural network
+species_labels = unique(new_species);
+num_species = length(species_labels);
