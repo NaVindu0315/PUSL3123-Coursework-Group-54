@@ -1,5 +1,6 @@
 %loading fisherirs
 load fisheriris;
+%q1
 % Shuffling the dataset
 rng("default");
 indx = randperm(size(meas,1));
@@ -38,3 +39,10 @@ for i = 1:length(testing_target)
     species_index = find(strcmp(species_labels, testing_target{i}));
     new_testing_targets(species_index, i) = 1;
 end
+%q3
+%defining k values for evaluating
+k_values = [5,7];
+for k = k_values
+    %training the knn with k value
+    
+
