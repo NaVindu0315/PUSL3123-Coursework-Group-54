@@ -10,3 +10,7 @@ trn_p = 0.6;
 
 % Spliting dataset into test and train
 training_count = floor(trn_p * size(new_meas,1));
+
+% Data
+training_data = new_meas(1:training_count,:);
+testing_data = new_meas(training_count+1:end,:);
