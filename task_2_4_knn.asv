@@ -40,6 +40,14 @@ load fisheriris;
 %     new_testing_targets(species_index, i) = 1;
 % end
 
+%shuffleing the dataset 
+rng("default");
+shfld_indc = randperm(size(meas,1));
+%split prcntg
+trn_p =0.6;
+tst_p =0.4;
+no_recrd
+
 
 %q3
 %defining k values for evaluating

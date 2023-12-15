@@ -46,6 +46,8 @@ shfld_indc = randperm(size(meas,1));
 %split prcntg
 trn_p =0.6;
 tst_p =0.4;
+no_samples = numel(shfld_indc);
+
 
 
 %q3
