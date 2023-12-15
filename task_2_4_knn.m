@@ -46,7 +46,8 @@ for k = k_values
     crct_clssifctns = sum(diag(cnfs_mat));
     totl_smpl = sum(cnfs_mat(:));
     prcntge =  (crct_clssifctns/totl_smpl)*100;
-    
+    fprintf("Percentage of correct classifications for k = %d: %.2f%%\n\n", k, prcntge);
+
 
 end
     
