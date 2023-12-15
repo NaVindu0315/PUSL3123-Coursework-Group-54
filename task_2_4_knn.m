@@ -30,3 +30,11 @@ for i = 1:length(training_target)
     species_index = find(strcmp(species_labels, training_target{i}));
     new_training_targets(species_index, i) = 1;
 end
+
+%for testing target
+
+new_testing_targets =  zeros(num_species,length(testing_target));
+for i = 1:length(testing_target)
+    species_index = find(strcmp(species_labels, testing_target{i}));
+    new_testing_targets(species_index, i) = 1;
+end
