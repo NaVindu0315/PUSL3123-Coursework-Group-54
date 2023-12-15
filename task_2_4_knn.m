@@ -4,7 +4,7 @@ load fisheriris;
 rng("default");
 indx = randperm(size(meas,1));
 meas = meas(indx,:);
-new_species = species(indx);
+species = species(indx);
 % Training percentage
 trn_p = 0.6;
 
@@ -16,12 +16,12 @@ training_data = meas(1:training_count,:);
 testing_data = meas(training_count+1:end,:);
 
 % Target
-training_target = new_species(1:training_count);
-testing_target = new_species(training_count+1:end);
+training_target = species(1:training_count);
+testing_target = species(training_count+1:end);
 
 
 % Converting species labels to numerical values for the neural network
-species_labels = unique(new_species);
+species_labels = unique(species);
 num_species = length(species_labels);
 
 new_training_targets = zeros(num_species, length(training_target));
