@@ -45,7 +45,9 @@ for k = k_values
     %prcntge of correct clssifications
     crct_clssifctns = sum(diag(cnfs_mat));
     totl_smpl = sum(cnfs_mat(:));
+    prcntge =  (crct_clssifctns/totl_smpl)*100;
     
+
 end
     
 
