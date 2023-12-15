@@ -46,7 +46,18 @@ shfld_indc = randperm(size(meas,1));
 %split prcntg
 trn_p =0.6;
 tst_p =0.4;
-no_recrd
+
+total_records = numel(shfld_indc);
+no_trainining_records = floor(trn_p*total_records);
+no_testing_records = total_records - no_trainining_records;
+
+%spltting dta
+train_data = meas(shfld_indc(1:no_trainining_records),:);
+test_data =meas(shfld_indc(no_trainining_records+1:end),:);
+
+training_target = species(shfld_indc(1:no_trainining_records));
+testing_target = species(shfld_indc(no_trainining_records+1:end));
+
 
 
 %q3
