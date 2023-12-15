@@ -47,7 +47,8 @@ for k = k_values
     knn_classifer = fitcknn(training_data,new_training_targets,'NumNeighbors',k);
 
     prdctd_labels = predict(knn_classifer,testing_data);
-    
+    %evaluating accuaracy
+    accrcy = sum(strcmp(prdctd_labels,new_testing_targets))
 
 
 
