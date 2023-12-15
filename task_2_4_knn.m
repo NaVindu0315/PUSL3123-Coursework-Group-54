@@ -46,10 +46,14 @@ shfld_indc = randperm(size(meas,1));
 %split prcntg
 trn_p =0.6;
 tst_p =0.4;
+
 total_records = numel(shfld_indc);
 no_train_records = floor(trn_p*total_records);
 no_test_records = total_records - no_train_records;
 
+%spltting dta
+train_data = meas(shfld_indc(1:no_train_records),:);
+test
 
 
 %q3
